@@ -123,7 +123,7 @@ fbad_share_audience <- function(fbacc, audience_id, adaccounts) {
 #' @export
 fbad_add_audience <- function(fbacc, audience_id,
                               schema = c('EMAIL', 'PHONE'),
-                              hashes) {
+                              hashes, hashed = FALSE) {
 
     ## match called function name for future reference
     fn <- this_function_name()
@@ -142,8 +142,8 @@ fbad_add_audience <- function(fbacc, audience_id,
     } else {
 
         ## compute hashes for e-mail or phone numbers
-        hashes <- sapply(hashes, digest, serialize = FALSE,
-                         algo = 'sha256', USE.NAMES = FALSE)
+        if (!hashed) {hashes <- sapply(hashes, digest, serialize = FALSE,
+                         algo = 'sha256', USE.NAMES = FALSE)}
 
         ## split hashes into 10K groups when adding and 1K when deleting
         hashes <- split(hashes, 1:length(hashes) %/%

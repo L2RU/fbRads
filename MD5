@@ -2,8 +2,8 @@
 db29e79d1cda48047ac282fc9a7c31b7 *NAMESPACE
 b2b83cd9629c0e14e74506e30a20a9e0 *NEWS
 42504306f3f707672b6f7838f778b3b1 *R/fb_ad.R
-2d6b5a7076fc4a1cf707f94bed5a23e1 *R/fb_adset.R
-b4ecf5e92e209e85382b7f808af4b2e8 *R/fb_audience.R
+067188d9cf6065998be776a7ddfc459c *R/fb_adset.R
+2d6b5a7076fc4a1cf707f94bed5a23e1 *R/fb_audience.R
 9999ce5c121e8c9f64f5d4e57ed78f8f *R/fb_campaign.R
 1c910257dfcc0034ca143cba6f98d259 *R/fb_creative.R
 aa3de30d972df7b560ca7f8baff1a716 *R/fb_image.R
